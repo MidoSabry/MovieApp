@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Gener2" representedClassName="Gener2" syncable="YES" codeGenerationType="class">
+        <attribute name="name2" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="movie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Movies2" inverseName="genre" inverseEntity="Movies2" syncable="YES"/>
+    </entity>
+    <entity name="Movies2" representedClassName="Movies2" syncable="YES" codeGenerationType="class">
+        <attribute name="gener2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="releaseYear2" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title2" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="genre" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Gener2" inverseName="movie" inverseEntity="Gener2" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Gener2" positionX="-63" positionY="9" width="128" height="73"/>
+        <element name="Movies2" positionX="-308.08203125" positionY="-9.98828125" width="128" height="135"/>
+    </elements>
+</model>
